@@ -7,7 +7,7 @@ a {
   color: #046baf;
 }
 .container {
-  margin: 120px auto;
+  margin: 100px auto;
   max-width: 600px;
 }
 
@@ -23,13 +23,23 @@ h1 {
   color: #272044;
 }
 
-form {
-  padding: 30px;
+.form-container {
   background-color: white;
-  box-shadow: 0px 20px 60px rgba(65, 50, 100, 0.08);
-  border-radius: 12px;
-  display: flex;
   margin-bottom: 30px;
+  border-radius: 12px;
+  padding: 15px 20px;
+  box-shadow: 0px 20px 60px rgba(65, 50, 100, 0.08);
+}
+
+form {
+  display: flex;
+}
+
+.hint {
+  line-height: 1.5;
+  margin: 5px;
+  opacity: 0.7;
+  font-size: 12px;
 }
 
 .instructions {
@@ -62,6 +72,10 @@ form {
   border-radius: 12px;
 }
 
+.hidden {
+  display: none;
+}
+
 .poem strong {
   color: #046baf;
 }
@@ -70,4 +84,14 @@ footer {
   text-align: center;
   font-size: 14px;
   margin-top: 30px;
+}
+
+.blink {
+  animation: blink-animation 1s steps(5, start) infinite;
+}
+
+@-webkit-keyframes blink-animation {
+  to {
+    visibility: hidden;
+  }
 }
