@@ -7,40 +7,46 @@
     <title>AI Spanish Poem Generator</title>
   </head>
   <body>
-    <header>
-      <h1>AI Spanish Poem Generator</h1>
-    </header>
+    <div class="container">
+      <header>
+        <h1>AI Spanish Poem Generator</h1>
+      </header>
 
-    <main>
-      <form>
-        <input
-          type="text"
-          placeholder="Enter the topic of the Spanish poem"
-          autofocus
-          required
-          autocomplete="off"
-        />
-        <input type="submit" />
-      </form>
-      <div>
-        The poem will go here
-        <br />
-        The poem will go here
-      </div>
-    </main>
-    <footer>
-      This AI project was coded by
-      <a href="https://github.com/Bpmodele" target="_blank">Madali Navas</a> and
-      is open-sourced on
-      <a
-        href="https://github.com/Bpmodele/spanish-poems-generator"
-        target="_blank"
-        >GitHub</a
-      >
-      and is hosted on
-      <a href="https://ai-spanish-poems-generator.netlify.app/">Netlify</a>
-    </footer>
-
+      <main>
+        <form>
+          <input
+            type="text"
+            placeholder="Enter the topic of the Spanish poem"
+            autofocus
+            required
+            autocomplete="off"
+            class="instructions"
+          />
+          <input type="submit" class="submit-button" />
+        </form>
+        <div class="poem">
+          The poem will go here
+          <br />
+          The poem will go here
+        </div>
+      </main>
+      <footer>
+        This AI project was coded by
+        <a href="https://github.com/Bpmodele" target="_blank">
+          <strong>Madali Navas</strong></a
+        >
+        and is open-sourced on
+        <a
+          href="https://github.com/Bpmodele/spanish-poems-generator"
+          target="_blank"
+          ><strong>GitHub</strong></a
+        >
+        and is hosted on
+        <a href="https://ai-spanish-poems-generator.netlify.app/"
+          ><strong>Netlify</strong></a
+        >
+      </footer>
+    </div>
     <script src="src/index.js"></script>
   </body>
 </html>
